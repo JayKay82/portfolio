@@ -8,7 +8,7 @@ html {
   background: #fefefe;
 }
 
-h1 {
+header h1 {
   font-size: 2.375em; /* 38px */
   margin: 0;
 }
@@ -32,10 +32,12 @@ footer {
 
 /* ------ Navigation ------ */
 
+/* Title */
 header h1 {
   display: inline-block;
 }
 
+/* Open Navigation Button */
 header > span.fa,
 #mobile-nav > span.fa {
   float: right;
@@ -46,6 +48,7 @@ header > span.fa {
   margin: 8px 2px 0 0;
 }
 
+/* Menu Background */
 #mobile-nav {
   display: none;
   position: absolute;
@@ -60,6 +63,7 @@ header > span.fa {
   display: block !important;
 }
 
+/* Social Media Icons */
 #mobile-nav > ul li {
   display: inline-block;
 }
@@ -70,10 +74,12 @@ header > span.fa {
   margin-right: 15px;
 }
 
+/* Close Button */
 #mobile-nav > span.fa {
   margin: 8px 12px 0 0;
 }
 
+/* Nav Links */
 #mobile-nav nav {
   margin: 30px 0;
   padding: 0;
@@ -99,6 +105,57 @@ header > span.fa {
   text-decoration: none;
 }
 
-.opened {
-  display: block;
+
+/* ==========================
+  Media Queries
+============================= */
+
+@media only screen and (min-width: 480px) {
+  /* Title */
+  header h1 {
+    font-size: 3em; /* 48px */
+  }
+
+  /* Open Navigation Button */
+  header > span.fa,
+  #mobile-nav > span.fa {
+    font-size: 3em; /* 48px */
+  }
+
+  header > span.fa {
+    margin: 12px 5px 0 0;
+  }
+
+  /* Social Media Icons */
+  #mobile-nav > ul {
+    float: left;
+    margin-top: 90px;
+    width: 10%;
+  }
+
+  #mobile-nav > ul li {
+    display: block;
+  }
+
+  #mobile-nav > ul a {
+    font-size: 4em;
+    margin-right: 0;
+  }
+
+  /* Nav Links */
+  #mobile-nav nav {
+    float: right;
+    margin: 30px 0;
+    width: 80%;
+    padding: 0;
+    text-align: left;
+  }
+
+  #mobile-nav nav li a {
+    font-size: 2.375em; /* 38px */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
 }
