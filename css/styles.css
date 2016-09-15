@@ -46,10 +46,6 @@ header > span.fa {
   margin: 8px 2px 0 0;
 }
 
-#mobile-nav > span.fa {
-  margin: 8px 12px 0 0;
-}
-
 #mobile-nav {
   display: none;
   position: absolute;
@@ -64,24 +60,38 @@ header > span.fa {
   display: block !important;
 }
 
-#mobile-nav ul {
-  margin: 50px 0;
+#mobile-nav > ul li {
+  display: inline-block;
+}
+
+#mobile-nav > ul a {
+  font-size: 3.5em;
+  color: #343333;
+  margin-right: 15px;
+}
+
+#mobile-nav > span.fa {
+  margin: 8px 12px 0 0;
+}
+
+#mobile-nav nav {
+  margin: 30px 0;
   padding: 0;
   text-align: center;
 }
 
-#mobile-nav li {
+#mobile-nav nav li {
   width: 80%;
   margin: 0 auto;
   border-bottom: 1px solid #343333;
   list-style: none;
 }
 
-#mobile-nav li:last-child {
+#mobile-nav nav li:last-child {
   border-bottom: none;
 }
 
-#mobile-nav a {
+#mobile-nav nav li a {
   display: inline-block;
   padding: 10px 50px;
   font-size: 2em;
