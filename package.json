@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "This project contains my portfolio site. The site consists of various pages including a basic blog, case studies of my work, and contact information.",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Kroezen",
+  "license": "ISC"
+}
