@@ -36,7 +36,7 @@ footer {
 
 .wrapper {
   padding: 0 10px;
-  height: calc(100vh - 23px); /* Keeps the footer at the bottom */
+  height: calc(100vh - 94px); /* Keeps the footer at the bottom */
 }
 
 
@@ -120,6 +120,27 @@ header > span.fa {
   text-decoration: none;
 }
 
+/* Footer Social Media Icons */
+footer > ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+footer > ul li {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer > ul li:last-child {
+  margin-right: 0;
+}
+
+footer > ul li a {
+  font-size: 2.375em; /* 38px */
+  color: #343333;
+}
+
 
 /* ==========================
   Media Queries
@@ -172,11 +193,17 @@ header > span.fa {
 }
 
 @media only screen and (min-width: 768px) {
+  /* Main Page Wrapper */
+  .wrapper {
+    height: calc(100vh - 23px); /* Keeps the footer at the bottom */
+  }
+
   /* Open Navigation Button */
   header > span.fa {
     display: none;
   }
 
+  /* Desktop Navigation Bar */
   header > nav {
     display: block;
     float: right;
@@ -197,6 +224,11 @@ header > span.fa {
     font-size: 1.375em; /* 22px */
     color: #343333;
     text-decoration: none;
+  }
+
+  /* Footer Social Media Icons */
+  footer > ul {
+    display: none;
   }
 }
 
