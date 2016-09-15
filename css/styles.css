@@ -2,6 +2,10 @@
   Base Element Styles
 ============================= */
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
   color: #343333;
@@ -13,6 +17,11 @@ header h1 {
   margin: 0;
 }
 
+header h1 a {
+  color: #343333;
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
 }
@@ -20,6 +29,7 @@ footer {
 
 /* ==========================
   Base Layout Styles
+  (mobile first)
 ============================= */
 
 /* ------ Header and Body Wrapper ------ */
@@ -35,6 +45,11 @@ footer {
 /* Title */
 header h1 {
   display: inline-block;
+}
+
+/* Desktop Navigation */
+header > nav {
+  display: none;
 }
 
 /* Open Navigation Button */
@@ -157,5 +172,38 @@ header > span.fa {
 }
 
 @media only screen and (min-width: 768px) {
-  
+  /* Open Navigation Button */
+  header > span.fa {
+    display: none;
+  }
+
+  header > nav {
+    display: block;
+    float: right;
+    margin-top: 27px;
+  }
+
+  header > nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  header > nav li:last-child {
+    margin-right: 0;
+  }
+
+  header > nav li a {
+    font-size: 1.375em; /* 22px */
+    color: #343333;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  /* Main Page Wrapper */
+  .wrapper {
+    margin: 0 auto;
+    width: 960px;
+  }
 }
