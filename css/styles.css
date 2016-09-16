@@ -22,6 +22,10 @@ header h1 a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.7em;
+}
+
 footer {
   text-align: center;
 }
@@ -36,7 +40,7 @@ footer {
 
 .wrapper {
   padding: 0 10px;
-  height: calc(100vh - 84px); /* Keeps the footer at the bottom */
+  /*height: calc(100vh - 84px); /* Keeps the footer at the bottom */*/
 }
 
 
@@ -72,6 +76,7 @@ header > span.fa {
   width: 100%;
   background-color: #fefefe;
   opacity: .975;
+  border-bottom: 1px solid #343333;
 }
 
 .visible {
@@ -144,6 +149,7 @@ footer > ul li a {
 
 /* ==========================
   Media Queries
+  for Base Layout
 ============================= */
 
 @media only screen and (min-width: 480px) {
@@ -253,4 +259,105 @@ footer > ul li a {
     margin: 0 auto;
     width: 960px;
   }
+}
+
+
+/* ==========================
+  Home Page Styles
+  (mobile first)
+============================= */
+
+#main-features {
+  margin: 50px 0 70px;
+}
+
+#main-features article {
+  width: 100%;
+  margin-bottom: 40px;
+  /*border: 1px solid black;*/
+  padding: 0 20px;
+}
+
+#main-features article h2::before {
+  font-family: FontAwesome;
+  font-size: 38px;
+  margin-right: 10px;
+}
+
+#feature-about::before {
+  content: "\f259";
+}
+
+#feature-work::before {
+  content: "\f121";
+}
+
+#feature-blog::before {
+  content: "\f11c";
+}
+
+#main-features article h2 {
+  /*text-align: center;*/
+  font-size: 3em; /* 38px */
+  font-weight:300;
+  margin: 0;
+}
+
+#main-features article a,
+#recent-posts article a {
+  color: #343333;
+  text-decoration: none;
+}
+
+#main-features article p {
+  margin-top: 8px;
+  text-align: justify;
+}
+
+#main-features article p a {
+  color: #9e9b9b;
+  font-style: italic;
+}
+
+#recent-posts {
+  margin-bottom: 70px;
+}
+
+#recent-posts article {
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+#recent-posts article:last-of-type {
+  margin-bottom: 40px;
+}
+
+#recent-posts h2 {
+  font-size: 2em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#recent-posts article h3 {
+  margin-bottom: 0;
+}
+
+#recent-posts article span {
+  font-size: .75em;
+}
+
+#recent-posts article p {
+  margin-top: 12px;
+}
+
+#recent-posts > p {
+  text-align: center;
+}
+
+#recent-posts > p a {
+  color: #343333;
+  background-color: #d7d7d7;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 3px;
 }
