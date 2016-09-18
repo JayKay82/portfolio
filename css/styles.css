@@ -201,7 +201,7 @@ footer > ul li a {
 @media only screen and (min-width: 768px) {
   /* Main Page Wrapper */
   .wrapper {
-    height: calc(100vh - 23px); /* Keeps the footer at the bottom */
+    /*height: calc(100vh - 23px); /* Keeps the footer at the bottom */*/
   }
 
   /* Open Navigation Button */
@@ -230,9 +230,22 @@ footer > ul li a {
     font-size: 1.375em; /* 22px */
     color: #343333;
     text-decoration: none;
+    transition: color .2s;
   }
 
-  /* Footer Social Media Icons to Fixed Side Icons*/
+  header > nav li a:hover {
+    color: #9e9b9b;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  /* Main Page Wrapper */
+  .wrapper {
+    margin: 0 auto;
+    width: 960px;
+  }
+
+  /* Footer Social Media Icons to Fixed Side Icons */
   footer > ul {
     position: fixed;
     top: 80px;
@@ -253,20 +266,13 @@ footer > ul li a {
   }
 }
 
-@media only screen and (min-width: 960px) {
-  /* Main Page Wrapper */
-  .wrapper {
-    margin: 0 auto;
-    width: 960px;
-  }
-}
-
 
 /* ==========================
   Home Page Styles
   (mobile first)
 ============================= */
 
+/* Main Features */
 #main-features {
   margin: 50px 0 70px;
 }
@@ -307,6 +313,12 @@ footer > ul li a {
 #recent-posts article a {
   color: #343333;
   text-decoration: none;
+  transition: color .2s;
+}
+
+#main-features article a:hover,
+#recent-posts article a:hover {
+  color: #9e9b9b;
 }
 
 #main-features article p {
@@ -319,6 +331,7 @@ footer > ul li a {
   font-style: italic;
 }
 
+/* Recent Posts */
 #recent-posts {
   margin-bottom: 70px;
 }
@@ -360,4 +373,40 @@ footer > ul li a {
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 3px;
+}
+
+/* ==========================
+  Media Queries
+  for Home Page Styles
+============================= */
+
+@media only screen and (min-width: 550px) {
+  #main-features {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  #main-features article {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  #main-features article:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #recent-posts article {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  #main-features article {
+    width: 32%;
+  }
 }
