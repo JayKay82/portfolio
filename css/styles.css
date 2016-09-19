@@ -368,8 +368,9 @@ footer > ul li a {
 }
 
 #recent-posts > p a {
-  color: #343333;
-  background-color: #d7d7d7;
+  color: #fefefe;
+  font-size: 1.25em;
+  background-color: #343333;
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 3px;
