@@ -125,6 +125,17 @@ header > span.fa {
   text-decoration: none;
 }
 
+/* Breadcrumbs */
+#breadcrumbs {
+  font-size: .875em; /* 14px */
+}
+
+#breadcrumbs a {
+  color: #9e9b9b;
+  text-decoration: none;
+  font-style: italic;
+}
+
 /* Footer Social Media Icons */
 footer > ul {
   margin: 10px 0 0;
@@ -376,6 +387,7 @@ footer > ul li a {
   border-radius: 3px;
 }
 
+
 /* ==========================
   Media Queries
   for Home Page Styles
@@ -411,3 +423,85 @@ footer > ul li a {
     width: 32%;
   }
 }
+
+
+/* ==========================
+  About Page Styles
+  (mobile first)
+============================= */
+
+#profile img {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  border-radius: 50%;
+}
+
+#my-details {
+  margin-top: -15px;
+  text-align: center;
+}
+
+#my-details h2 {
+  font-size: 1.875em; /* 30px */
+  font-weight: 300;
+}
+
+#my-details span {
+  display: block;
+  margin-top: -25px;
+  font-size: 1.125em; /* 18px */
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#my-details p {
+  margin-top: 8px;
+  font-size: 1.25em; /* 20px */
+  font-weight: 300;
+}
+
+#my-details p a:first-of-type {
+  font-size: .9em; /* 18px */
+}
+
+#my-details p a {
+  color: #343333;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+#my-details p a:hover {
+  color: #9e9b9b;
+}
+
+#profile .bio {
+  padding: 0 10px;
+}
+
+#profile .bio .collapse {
+  height: 105px;
+  overflow: hidden;
+}
+
+#profile .bio .read-more {
+  width: 90%;
+  margin-top: -10px;
+  text-align: right;
+}
+
+#profile .bio a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #343333;
+  font-size: .875em;
+}
+
+/*#profile .bio a::before {
+  position:relative;
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  content: "\f106";
+  top: 1px;
+  right: 5px;
+}*/
