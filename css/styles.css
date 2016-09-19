@@ -497,11 +497,21 @@ footer > ul li a {
   font-size: .875em;
 }
 
-/*#profile .bio a::before {
-  position:relative;
-  font-family: "FontAwesome";
-  font-size: 1.25em;
-  content: "\f106";
-  top: 1px;
-  right: 5px;
-}*/
+#skills {
+  margin: 50px 0;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+#skills ul {
+  width: 55%;
+  margin: 0 auto;
+  list-style: none;
+  color: #6c6c6c;
+}
+
+#skills ul li {
+  margin-bottom: 15px;
+}
