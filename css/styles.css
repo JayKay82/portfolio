@@ -670,16 +670,14 @@ footer > ul li a {
 ============================= */
 
 #my-work h2 {
-  display: inline-block;
   font-size: 2.25em; /* 36px */
-  width: 60%;
+  margin-bottom: 10px;
 }
 
-#my-work .sub-text {
-  display: inline-block;
-  width: 38%;
-  margin: -30px 0 0 0;
-  font-size: 1.25em; /* 20px */
+#my-work h2::after {
+  content: "of my Work";
+  margin-left: 5px;
+  font-size: .6em; /* 27px */
   font-weight: 300;
 }
 
@@ -727,4 +725,24 @@ footer > ul li a {
   padding: 2px 8px;
   font-size: .75em;
   font-weight: 300;
+}
+
+
+/* ==========================
+  Media Queries
+  for Work Landing Page Styles
+============================= */
+
+@media only screen and (min-width: 620px) {
+  /* Articles to Two-Column Layout */
+  #my-work article {
+    display:  inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding: 0 25px;
+  }
+
+  #my-work article img {
+    width: 100%;
+  }
 }
