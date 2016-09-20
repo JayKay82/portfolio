@@ -583,8 +583,20 @@ footer > ul li a {
   for Home Page Styles
 ============================= */
 
-@media only screen and (min-width: 620px) {
+/* First Break Point for Skills Section */
+@media only screen and (min-width: 560px) {
+  #skills h2 {
+    text-align: left;
+  }
 
+  #skills ul {
+    display: inline-block;
+    width: 49%;
+  }
+}
+
+/* First Break Point for Profile Section */
+@media only screen and (min-width: 620px) {
   #profile img {
     display: inline-block;
     width: 38%;
@@ -597,13 +609,56 @@ footer > ul li a {
     width: 60%;
     margin-top: 50px;
   }
+}
 
-  #skills h2 {
-    text-align: left;
+/* Second Break Point for Profile and Skills Sections */
+@media only screen and (min-width: 768px) {
+  /* Profile Section */
+  #img-profile {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  #profile img {
+    width: 80%;
+  }
+
+  #my-details {
+    width: 100%;
+    margin: 0;
+  }
+
+  #my-details h2 {
+    margin-top: 10px;
+  }
+
+  #profile .bio {
+    display: inline-block;
+    width: 68%;
+    margin: 30px 0 0
+  }
+
+  #profile .bio .collapse {
+    height: auto;
+    overflow: auto;
+  }
+
+  #profile .bio .read-more {
+    display: none;
+  }
+
+  /* Skills Section */
+  #skills {
+    width: 25%;
+    float: right;
+    margin-top: 0;
+    padding: 0 0 0 50px;
   }
 
   #skills ul {
-    display: inline-block;
-    width: 49%;
+    width: 100%;
+    padding: 0;
   }
 }
