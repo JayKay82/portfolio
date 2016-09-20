@@ -16,6 +16,7 @@ $(document).ready(function(){
     $('#mobile-nav').removeClass('visible');
   });
 
+  // Opens and Collapses Profile Text on the About Page
   $("#profile .bio a").on("click", function(e){
     e.preventDefault();
     console.log("Read more clicked");
@@ -33,6 +34,5 @@ $(document).ready(function(){
     }
 
     this.innerHTML = (this.innerHTML === "read more") ? "read less" : "read more";
-
   });
 });

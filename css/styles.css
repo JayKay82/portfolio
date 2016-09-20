@@ -580,7 +580,7 @@ footer > ul li a {
 
 /* ==========================
   Media Queries
-  for Home Page Styles
+  for About Page Styles
 ============================= */
 
 /* First Break Point for Skills Section */
@@ -662,3 +662,9 @@ footer > ul li a {
     padding: 0;
   }
 }
+
+
+/* ==========================
+  Work Landing Page Styles
+  (mobile first)
+============================= */
