@@ -668,3 +668,63 @@ footer > ul li a {
   Work Landing Page Styles
   (mobile first)
 ============================= */
+
+#my-work h2 {
+  display: inline-block;
+  font-size: 2.25em; /* 36px */
+  width: 60%;
+}
+
+#my-work .sub-text {
+  display: inline-block;
+  width: 38%;
+  margin: -30px 0 0 0;
+  font-size: 1.25em; /* 20px */
+  font-weight: 300;
+}
+
+#my-work > p {
+  margin: 0 0 50px;
+}
+
+#my-work article {
+  margin-bottom: 70px;
+}
+
+#my-work article img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#my-work article h3 {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+#my-work article a {
+  color: #343333;
+  transition: color .2s;
+  text-decoration: none;
+}
+
+#my-work article a:hover {
+  color: #9e9b9b;
+}
+
+#my-work article i {
+  display: inline-block;
+  width: 8%;
+  font-size: 1.5em;
+}
+
+#my-work article span {
+  display: inline-block;
+  color: #fefefe;
+  background-color: #343333;
+  margin: 5px 10px 0 0;
+  padding: 2px 8px;
+  font-size: .75em;
+  font-weight: 300;
+}
