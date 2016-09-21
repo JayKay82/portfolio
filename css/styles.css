@@ -798,3 +798,67 @@ footer > ul li a {
     padding: 0 60px;
   }
 }
+
+
+/* ==========================
+  Blog Landing Page Styles
+  (mobile first)
+============================= */
+
+#posts {
+  margin-bottom: 40px;
+}
+
+#posts article {
+  margin-bottom: 60px;
+}
+
+#posts article time {
+  display: block;
+  font-size: .75em;
+  font-weight: 300;
+  margin-top: -15px;
+}
+
+#posts article p {
+  margin: 15px 0;
+}
+
+#posts article ul {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+#posts article ul li,
+#posts article span {
+  display: inline-block;
+  padding: 2px 8px;
+  font-weight: 300;
+}
+
+#posts article ul li {
+  margin-right: 15px;
+  list-style: none;
+  font-size: 1em;
+  border: 1px solid #343333;
+}
+
+#posts article span {
+  color: #fefefe;
+  background-color: #343333;
+  margin: 5px 10px 0 0;
+  font-size: .75em;
+}
+
+#posts > p {
+  text-align: center;
+}
+
+#posts > p a {
+  color: #fefefe;
+  font-size: 1.25em;
+  background-color: #343333;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+}
