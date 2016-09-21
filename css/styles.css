@@ -749,7 +749,7 @@ footer > ul li a {
 #project img {
   display: block;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 #project h2,
@@ -764,6 +764,7 @@ footer > ul li a {
 #project a {
   width: 13%;
   font-size: 1.75em;
+  text-align: right;
 }
 
 .case-study-section {
@@ -778,4 +779,22 @@ footer > ul li a {
 
 .case-study-section ol li {
   margin-bottom: 20px;
+}
+
+
+/* ==========================
+  Media Queries
+  for Individual Case Study Styles
+============================= */
+
+@media only screen and (min-width: 620px) {
+  #project {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #project {
+    padding: 0 60px;
+  }
 }
