@@ -807,6 +807,7 @@ footer > ul li a {
 
 #posts {
   margin-bottom: 40px;
+  padding: 0 15px;
 }
 
 #posts article {
@@ -861,4 +862,59 @@ footer > ul li a {
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 3px;
+}
+
+#cats-tags {
+  display: none;
+}
+
+
+/* ==========================
+  Media Queries
+  for Blog landing page
+============================= */
+
+@media only screen and (min-width: 620px) {
+  #posts,
+  #cats-tags {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #posts {
+    width: 75%;
+    padding: 0 25px;
+  }
+
+  #cats-tags {
+    width: 24%;
+  }
+
+  #cats-tags ul {
+    padding: 0;
+  }
+
+  #cats-tags ul li,
+  #cats-tags span {
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  #cats-tags ul li {
+    list-style: none;
+    margin: 0 5px 10px 0;
+    padding: 2px 8px;
+    border: 1px solid #343333;
+  }
+
+  #cats-tags span {
+    font-size: .75em;
+    background-color: #343333;
+    margin: 5px 10px 0 0;
+    padding: 2px 8px;
+  }
+
+  #cats-tags span a {
+    color: #fefefe;
+  }
 }
