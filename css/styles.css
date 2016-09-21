@@ -669,20 +669,26 @@ footer > ul li a {
   (mobile first)
 ============================= */
 
-#my-work h2 {
+#my-work-intro h2 {
   font-size: 2.25em; /* 36px */
   margin-bottom: 10px;
 }
 
-#my-work h2::after {
+#my-work-intro h2::after {
   content: "of my Work";
   margin-left: 5px;
   font-size: .6em; /* 27px */
   font-weight: 300;
 }
 
-#my-work > p {
+#my-work-intro > p {
   margin: 0 0 50px;
+  font-size: 1.125em;
+  font-weight: 300;
+}
+
+#my-work-intro img {
+  display: none;
 }
 
 #my-work article {
@@ -744,5 +750,36 @@ footer > ul li a {
 
   #my-work article img {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #my-work-intro {
+    margin: 20px 0 40px;
+  }
+
+  /* Set the Intro Image for Desktop Viewports */
+  #my-work-intro p,
+  #my-work-intro img {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #my-work-intro p {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 2em;
+    width: 75%;
+    padding-right: 20px;
+  }
+
+  #my-work-intro img {
+    width: 24%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #my-work-intro p {
+    margin-top: 20px;
   }
 }
