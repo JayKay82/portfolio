@@ -573,6 +573,7 @@ footer > ul li a {
   }
 }
 
+
 /* Second Break Point for Profile and Skills Sections */
 @media only screen and (min-width: 768px) {
   /* Profile Section */
@@ -831,20 +832,24 @@ footer > ul li a {
 }
 
 #posts article ul li,
-#posts article span {
+#posts article span,
+#post article ul, li,
+#post article span {
   display: inline-block;
   padding: 2px 8px;
   font-weight: 300;
 }
 
-#posts article ul li {
+#posts article ul li,
+#post article ul li {
   margin-right: 15px;
   list-style: none;
   font-size: 1em;
   border: 1px solid #343333;
 }
 
-#posts article span {
+#posts article span,
+#post article span {
   color: #fefefe;
   background-color: #343333;
   margin: 5px 10px 0 0;
@@ -917,4 +922,31 @@ footer > ul li a {
   #cats-tags span a {
     color: #fefefe;
   }
+}
+
+
+/* ==========================
+  Blog Posts Styles
+  (mobile first)
+============================= */
+
+#author-date {
+  display: block;
+  font-size: .75em;
+  font-weight: 300;
+  margin-top: -15px;
+}
+
+#post article ul {
+  display: block;
+  margin: 20px 0 15px;
+  padding: 0;
+}
+
+#post article p:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+#post article p:last-child {
+  margin-bottom: 50px;
 }
