@@ -833,15 +833,15 @@ footer > ul li a {
 
 #posts article ul li,
 #posts article span,
-#post article ul, li,
-#post article span {
+#post aside ul li,
+#post aside span {
   display: inline-block;
   padding: 2px 8px;
   font-weight: 300;
 }
 
 #posts article ul li,
-#post article ul li {
+#post aside ul li {
   margin-right: 15px;
   list-style: none;
   font-size: 1em;
@@ -849,7 +849,7 @@ footer > ul li a {
 }
 
 #posts article span,
-#post article span {
+#post aside span {
   color: #fefefe;
   background-color: #343333;
   margin: 5px 10px 0 0;
@@ -930,6 +930,14 @@ footer > ul li a {
   (mobile first)
 ============================= */
 
+#post article h2 {
+  display: none;
+}
+
+#post article > p {
+  padding: 0 20px;
+}
+
 #author-date {
   display: block;
   font-size: .75em;
@@ -937,16 +945,73 @@ footer > ul li a {
   margin-top: -15px;
 }
 
-#post article ul {
+#post-info ul {
   display: block;
   margin: 20px 0 15px;
   padding: 0;
 }
 
-#post article p:nth-of-type(2) {
+#post #post-info ul li {
+  margin-right: 10px;
+}
+
+#post article > p:first-of-type {
   margin-top: 30px;
 }
 
-#post article p:last-child {
+#post article > p:last-of-type {
   margin-bottom: 50px;
+}
+
+
+/* ==========================
+  Media Queries
+  for Post page
+============================= */
+
+@media only screen and (min-width: 620px) {
+  #post article > p {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #post h2 {
+    display: none;
+  }
+
+  #post-info {
+    margin-top: 100px;
+  }
+
+  #post-info ul {
+    margin: 0;
+  }
+
+  #post #post-info ul li {
+    margin: 0 5px 10px 0;
+  }
+
+  #author-date {
+    font-size: .9em;
+  }
+
+  #post article h2 {
+    display: block;
+    padding: 0 30px;
+  }
+
+  #post-info,
+  #post article {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #post-info {
+    width: 25%;
+  }
+
+  #post article {
+    width: 74%;
+  }
 }
