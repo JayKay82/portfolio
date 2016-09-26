@@ -9,6 +9,6 @@ angular.module('jaykayPortfolio')
           .when('/about', { templateUrl: 'views/about' })
           .when('/work', { templateUrl: 'views/case-studies' })
           .when('/contact', {templateUrl: 'views/contact' })
-          .when('/blog', { templateUrl: 'views/blog-landing' });
+          .when('/blog', { templateUrl: 'blog/blog' });
 
   }]);

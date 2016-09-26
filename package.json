@@ -1,16 +1,26 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This project contains my portfolio site. The site consists of various pages including a basic blog, case studies of my work, and contact information.",
   "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "author": "Jan Kroezen",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayKay82/portfolio"
+  },
   "dependencies": {
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
     "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
   }
 }
