@@ -832,7 +832,7 @@ footer > ul li a {
 }
 
 #posts article ul li,
-#posts article span,
+#posts article > span,
 #post aside ul li,
 #post aside span {
   display: inline-block;
@@ -848,7 +848,7 @@ footer > ul li a {
   border: 1px solid #343333;
 }
 
-#posts article span,
+#posts article > span,
 #post aside span {
   color: #fefefe;
   background-color: #343333;

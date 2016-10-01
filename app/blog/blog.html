@@ -2,79 +2,43 @@
 <p id="breadcrumbs"><a href="./index.html">home</a> >> blog</p>
 
 <!-- MAIN CONTENT -->
-<section id="posts">
-  <h2>Latest Posts</h2>
-  <article>
-    <h3><a href="#">The Lorem of Design</a></h3>
-    <time datetime="2016-09-20">20th September '16</time>
-    <p>
-      Marfa 3 wolf moon cronut, viral gluten-free hexagon fap banjo listicle fixie raclette. Semiotics synth hexagon fanny pack four dollar toast, truffaut street art lomo<a href="#">[...]</a>
-    </p>
-    <ul>
-      <li>Design</li>
-      <li>Work</li>
-    </ul>
-    <span>Sass</span><span>Illustrator CC</span><span>colors</span>
-  </article>
-  <article>
-    <h3><a href="#">The Ipsum of Development</a></h3>
-    <time datetime="2016-09-16">16th September '16</time>
-    <p>
-      Authentic asymmetrical gluten-free church-key, farm-to-table microdosing fingerstache poutine butcher chicharrones slow-carb austin hell of humblebrag everyday carry<a href="#">[...]</a>
-    </p>
-    <ul>
-      <li>Development</li>
-    </ul>
-    <span>JavaScript</span><span>AngularJS</span>
-  </article>
-  <article>
-    <h3><a href="./blog-post.html">How to Build a Load Button in ReactJS</a></h3>
-    <time datetime="2016-09-01">1st September '16</time>
-    <p>
-      Distillery sustainable disrupt enamel pin single-origin coffee lyft narwhal, tumeric skateboard mustache polaroid tofu waistcoat pop-up. Activated charcoal cold-pressed occupy scenester<a href="#">[...]</a>
-    </p>
-    <ul>
-      <li>Tutorial</li>
-      <li>Development</li>
-    </ul>
-    <span>ReactJS</span><span>Babel</span><span>Reflux</span>
-  </article>
-  <article>
-    <h3><a href="#">Making a Good First Impression</a></h3>
-    <time datetime="2016-08-25">25th August '16</time>
-    <p>
-      Keffiyeh four dollar toast everyday carry leggings mixtape subway tile. Vaporware fap semiotics letterpress 8-bit. Fanny pack kinfolk vinyl poke jean shorts<a href="#">[...]</a>
-    </p>
-    <ul>
-      <li>Ethics</li>
-      <li>Work</li>
-    </ul>
-    <span>Office</span><span>Communication</span><span>Planning</span>
-  </article>
-  <p>
-    <a href="#">More Posts</a>
-  </p>
-</section>
+<div ng-controller="PostsCtrl as ctrl">
+  <section id="posts">
+    <h2>Latest Posts</h2>
+    <article ng-repeat="post in ctrl.posts">
+      <h3 ng-bind="post.title"></h3>
+      <time datetime="2016-09-20" ng-bind="post.date"></time>
+      <p><span ng-bind="post.body | limitTo:200"></span><a href="#">[...]</a></p>
+      <ul>
+        <li>Design</li>
+        <li>Work</li>
+      </ul>
+      <span>Sass</span><span>Illustrator CC</span><span>colors</span>
+    </article>
+    <p><a href="#">More Posts</a></p>
+  </section>
 
-<aside id="cats-tags">
-  <h2>Categories</h2>
-  <ul>
-    <li><a href="#">Design</a></li>
-    <li><a href="#">Development</a></li>
-    <li><a href="#">Ethics</a></li>
-    <li><a href="#">Tutorial</a></li>
-    <li><a href="#">Work</a></li>
-  </ul>
-  <h2>Tags</h2>
-  <span><a href="#">AngularJS</a></span>
-  <span><a href="#">Babel</a></span>
-  <span><a href="#">Colors</a></span>
-  <span><a href="#">Communication</a></span>
-  <span><a href="#">Illustrator CC</a></span>
-  <span><a href="#">Javascript</a></span>
-  <span><a href="#">Office</a></span>
-  <span><a href="#">Planning</a></span>
-  <span><a href="#">ReactJS</a></span>
-  <span><a href="#">Reflux</a></span>
-  <span><a href="#">Sass</a></span>
-</aside>
+<!-- TODO: Make this section dynamic by pulling all the categories and tags out of existing post objects and making two unique lists name Categories and Tags. Each cat and tag will link to a collection of posts contain that cat or tag. -->
+  <aside id="cats-tags">
+    <h2>Categories</h2>
+    <ul>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Development</a></li>
+      <li><a href="#">Ethics</a></li>
+      <li><a href="#">Tutorial</a></li>
+      <li><a href="#">Work</a></li>
+    </ul>
+    <h2>Tags</h2>
+    <span><a href="#">AngularJS</a></span>
+    <span><a href="#">Babel</a></span>
+    <span><a href="#">Colors</a></span>
+    <span><a href="#">Communication</a></span>
+    <span><a href="#">Illustrator CC</a></span>
+    <span><a href="#">Javascript</a></span>
+    <span><a href="#">Office</a></span>
+    <span><a href="#">Planning</a></span>
+    <span><a href="#">ReactJS</a></span>
+    <span><a href="#">Reflux</a></span>
+    <span><a href="#">Sass</a></span>
+  </aside>
+</div>
