@@ -2,9 +2,9 @@
 
 // Pull in dependencies:
   // Express is the micro-framework for creating this REST API
-var express = require('express'),
+var express       = require('express'),
   // Morgan is a logging tool
-    morgan = require('morgan');
+    morgan        = require('morgan');
 
 var app = express();
 // Use Morgan middleware to log in the dev environment

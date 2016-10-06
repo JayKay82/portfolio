@@ -1,1 +1,4 @@
 node_modules
+app/vendor/jquery.min.js
+app/vendor/angular
+app/vendor/angular-route
